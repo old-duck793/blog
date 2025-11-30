@@ -12,11 +12,8 @@ interface StoreState {
   SpinePlayerEnabled: boolean
   showDropdownMenu: boolean
   darkMode: 'light' | 'dark' | 'system'
-<<<<<<< HEAD
-=======
   selectedLine: string | null
   lineLatencies: Record<string, number | null>
->>>>>>> c3c0476 (update)
 }
 
 const state: StoreState = reactive({
@@ -42,11 +39,8 @@ const state: StoreState = reactive({
   SpinePlayerEnabled: true,
   showDropdownMenu: false,
   darkMode: 'system',
-<<<<<<< HEAD
-=======
   selectedLine: null,
   lineLatencies: {},
->>>>>>> c3c0476 (update)
 })
 
 export function useStore() {

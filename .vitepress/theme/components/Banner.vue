@@ -6,13 +6,8 @@
     <slot></slot>
 
     <canvas id="wave"></canvas>
-<<<<<<< HEAD
-    <video autoplay muted loop class="bg-video" v-if="videoBanner">
-      <source src="../assets/banner/banner_video.mp4" type="video/mp4" />
-=======
     <video autoplay muted loop class="bg-video" v-if="videoBanner" :key="videoSource">
       <source :src="videoSource" type="video/mp4" />
->>>>>>> c3c0476 (update)
     </video>
     <div class="bg-img" v-else></div>
   </div>
@@ -25,9 +20,6 @@ const videoBanner = themeConfig.videoBanner
 
 import { useStore } from '../store'
 const { state } = useStore()
-<<<<<<< HEAD
-import { onMounted } from 'vue'
-=======
 import { onMounted, computed } from 'vue'
 
 import lightVideo from '../assets/banner/banner_video.mp4'
@@ -37,7 +29,6 @@ const videoSource = computed(() => {
   return state.darkMode === 'dark' ? darkVideo : lightVideo
 })
 
->>>>>>> c3c0476 (update)
 class SiriWave {
   K: number
   F: number

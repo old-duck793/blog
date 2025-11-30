@@ -6,10 +6,7 @@
         <SearchButton></SearchButton>
       </div>
       <ToggleSwitch></ToggleSwitch>
-<<<<<<< HEAD
-=======
       <LineSwitcher></LineSwitcher>
->>>>>>> c3c0476 (update)
     </div>
   </div>
 </template>
@@ -19,10 +16,7 @@ import { ref, onMounted, onUnmounted } from 'vue'
 import MusicControl from './Music-Control.vue'
 import SearchButton from './Search-Button.vue'
 import ToggleSwitch from './ToggleSwitch.vue'
-<<<<<<< HEAD
-=======
 import LineSwitcher from './LineSwitcher.vue'
->>>>>>> c3c0476 (update)
 import { useStore } from '../../store'
 
 const { state } = useStore()
