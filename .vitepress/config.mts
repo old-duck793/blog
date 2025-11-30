@@ -80,23 +80,16 @@ export default defineConfigWithTheme<ThemeConfig>({
     //banner区配置
     videoBanner: true,
     name: "old-duck's Blog",
-<<<<<<< HEAD
-    welcomeText: 'Blue Archive',
-=======
     welcomeText: "old duck's blog",
->>>>>>> c3c0476 (update)
     motto: ['和你的日常，就是奇迹','一切奇迹的始发点'],
     social: [
       { icon: 'github', url: 'https://github.com/old-duck793' },
       { icon: 'bilibili', url: 'https://space.bilibili.com/1648701055' },
     ],
-<<<<<<< HEAD
-=======
     lineSwitch: [
       { name: '线路一 (CF)', url: 'https://blog.liyuze.dpdns.org' },
       { name: '线路二 (Vercel)', url: 'https://blog-mauve-ten-71.vercel.app/' }
     ],
->>>>>>> c3c0476 (update)
 
     //spine语音配置，可选zh/jp
     spineVoiceLang: 'jp',
