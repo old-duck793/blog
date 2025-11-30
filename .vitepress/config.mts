@@ -88,7 +88,7 @@ export default defineConfigWithTheme<ThemeConfig>({
     ],
     lineSwitch: [
       { name: '线路一 (CF)', url: 'https://blog.liyuze.dpdns.org' },
-      { name: '线路二 (Vercel)', url: 'https://blog-mauve-ten-71.vercel.app/' }
+      { name: '线路二 (Vercel)', url: 'https://blog.liyuze.qzz.io' }
     ],
 
     //spine语音配置，可选zh/jp
