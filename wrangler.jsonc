@@ -1,0 +1,8 @@
+// wrangler.jsonc
+{
+  "name": "blog",
+  "compatibility_date": "2025-08-30", 
+  "assets": {
+    "directory": "./.vitepress/dist" // 这指向你的 VitePress 构建产物目录
+  }
+}
