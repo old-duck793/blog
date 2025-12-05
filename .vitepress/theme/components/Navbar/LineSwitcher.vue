@@ -7,7 +7,7 @@
           <input type="radio" name="line" :value="line.url" v-model="selectedLineUrl" @change="switchLine" />
           <span class="line-name">{{ line.name }}</span>
         </label>
-        <span class="latency">
+        <span class="latency" @click="recheckLatency(line.url)" title="点击重新测速">
           {{ getLatency(line.url) }}
         </span>
       </div>
@@ -26,20 +26,22 @@ const lines = themeConfig.lineSwitch || []
 
 const selectedLineUrl = ref<string | null>(null)
 
-// 初始化时，从 localStorage 加载已保存的线路选择
+// 初始化时，根据当前 URL 确定线路
 onMounted(() => {
-  const savedLine = localStorage.getItem('selectedLine')
-  if (savedLine && lines.some(line => line.url === savedLine)) {
-    selectedLineUrl.value = savedLine
-    state.selectedLine = savedLine
-  } else if (lines.length > 0) {
-    // 如果没有保存值，默认选中第一个
-    selectedLineUrl.value = lines[0].url
-    state.selectedLine = lines[0].url
+  const currentHref = window.location.href
+  const currentLine = lines.find((line: { url: string }) => currentHref.startsWith(line.url))
+
+  if (currentLine) {
+    selectedLineUrl.value = currentLine.url
+    state.selectedLine = currentLine.url
+    localStorage.setItem('selectedLine', currentLine.url)
+  } else {
+    selectedLineUrl.value = null
+    state.selectedLine = null
   }
 
   // 检测各线路延迟
-  lines.forEach(line => {
+  lines.forEach((line: { url: string }) => {
     checkLatency(line.url)
   })
 })
@@ -67,6 +69,11 @@ const getLatency = (url: string) => {
     return '超时'
   }
   return `${latency}ms`
+}
+
+const recheckLatency = (url: string) => {
+  state.lineLatencies[url] = undefined
+  checkLatency(url)
 }
 
 const switchLine = () => {

@@ -10,6 +10,7 @@ export interface ThemeConfig {
   welcomeText: string
   motto: string[]
   social: { icon: string; url: string }[]
+  lineSwitch: { name: string; url: string }[]
 
   //spine
   spineVoiceLang: 'zh' | 'jp'
@@ -98,7 +99,8 @@ export default defineConfigWithTheme<ThemeConfig>({
     footerName: 'old-duck',
     poweredList: [
       { name: 'VitePress', url: 'https://github.com/vuejs/vitepress' },
-      { name: 'Cloudflare Workers', url: 'https://workers.cloudflare.com/' },
+      { name: 'Cloudflare Workers', url: 'https://workers.cloudflare.com' },
+      { name: 'Vercel', url: 'https://vercel.com'}
     ],
 
     //gitalk配置

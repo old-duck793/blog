@@ -13,7 +13,7 @@ interface StoreState {
   showDropdownMenu: boolean
   darkMode: 'light' | 'dark' | 'system'
   selectedLine: string | null
-  lineLatencies: Record<string, number | null>
+  lineLatencies: Record<string, number | null |undefined >
 }
 
 const state: StoreState = reactive({
