@@ -1,5 +1,15 @@
 # vitepress-theme-bluearchive
 
+由Alittfre大佬的[vitepress-theme-bluearchive](https://github.com/Alittfre/vitepress-theme-bluearchive)微调而成，面向Gemini编程，主要调整了两个方面：
+
+1.夜间模式的视频背景也可以单独指定了，路径在`.vitepress\theme\assets\banner\bannner_video_dark.mp4`
+
+2.在设置页面中添加了延迟检测和线路切换的功能
+
+<img title="" src="file:///D:/桌面/桌面文件/vitepress-theme-bluearchive-main/lineswitcher.webp" alt="图片加载中" data-align="inline">
+
+
+
 ![logo](.vitepress/theme/assets/icon/footLogo.svg)
 
 BA 主题博客，基于 VitePress，绝赞画饼中
@@ -133,7 +143,6 @@ pnpm run build
 # npm install
 # npm run dev
 # npm run build
-
 ```
 
 ## 上线 GitHub Pages 并使用 GitHub Actions 自动构建
