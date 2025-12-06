@@ -6,7 +6,7 @@
 
 2.在设置页面中添加了延迟检测和线路切换的功能
 
-<img title="" src="file:///D:/桌面/桌面文件/vitepress-theme-bluearchive-main/lineswitcher.webp" alt="图片加载中" data-align="inline">
+<img title="" src="./lineswitcher.webp" alt="lineswitch" data-align="inline">
 
 
 
