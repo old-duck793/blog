@@ -19,21 +19,19 @@ export interface ThemeConfig {
   footerName: string
   poweredList: { name: string; url: string }[]
 
-  //gitalk
-  clientID: string
-  clientSecret: string
-  repo: string
-  owner: string
-  admin: string[]
+  //giscus
+  giscus: {
+    repo: string
+    repoId: string
+    category: string
+    categoryId: string
+  }
 }
 
 export default defineConfigWithTheme<ThemeConfig>({
   lang: 'zh-CN',
   head: [
     ['link', { rel: 'shortcut icon', href: '/favicon.ico' }],
-    // gitalk
-    ['link', { rel: 'stylesheet', href: 'https://unpkg.com/gitalk/dist/gitalk.css' }],
-    ['script', { src: 'https://unpkg.com/gitalk/dist/gitalk.min.js' }],
     // bluearchive font
     [
       'link',
@@ -103,12 +101,13 @@ export default defineConfigWithTheme<ThemeConfig>({
       { name: 'Vercel', url: 'https://vercel.com'}
     ],
 
-    //gitalk配置
-    clientID: 'Ov23liVYxoyqW3si9NAl',
-    clientSecret: '536335d9189fb4e2a78a07f504497ac2d1e80215',
-    repo: 'gitalk-comment',
-    owner: 'old-duck793',
-    admin: ['old-duck793'],
+    //giscus配置
+    giscus: {
+      repo: 'old-duck793/giscus-comment',
+      repoId: 'R_kgDOQvPlpg',
+      category: 'Announcements',
+      categoryId: 'DIC_kwDOQvPlps4C0QqN',
+    },
   },
   markdown: {
     theme: 'solarized-dark',
