@@ -1,6 +1,6 @@
 # vitepress-theme-bluearchive
 
-由Alittfre大佬的[vitepress-theme-bluearchive](https://github.com/Alittfre/vitepress-theme-bluearchive)微调而成，面向Gemini编程，主要调整了两个方面：
+由Alittfre大佬的[vitepress-theme-bluearchive](https://github.com/Alittfre/vitepress-theme-bluearchive)微调而成，面向Gemini编程，主要调整了三个方面：
 
 1.夜间模式的视频背景也可以单独指定了，路径在`.vitepress\theme\assets\banner\bannner_video_dark.mp4`
 
@@ -8,7 +8,7 @@
 
 <img title="" src="./lineswitcher.webp" alt="lineswitch" data-align="inline">
 
-
+3.为了适应多站点，评论组件换成了giscus
 
 ![logo](.vitepress/theme/assets/icon/footLogo.svg)
 
