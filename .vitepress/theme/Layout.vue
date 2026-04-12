@@ -18,7 +18,7 @@
       </transition>
     </main>
     <Footer></Footer>
-    <Fireworks v-if="state.fireworksEnabled"></Fireworks>
+    <BASpark v-if="state.fireworksEnabled"></BASpark>
     <SpinePlayer></SpinePlayer>
     <ToTop></ToTop>
     <!-- 背景音乐元素 -->
@@ -41,7 +41,7 @@ import PostViewer from './components/Post-Viewer.vue'
 import PostInnerBanner from './components/Post-InnerBanner.vue'
 import NotFound from './components/NotFound.vue'
 import ToTop from './components/ToTop.vue'
-import Fireworks from './components/Fireworks.vue'
+import BASpark from './components/BASpark.vue'
 import Footer from './components/Footer.vue'
 // @ts-ignore
 import SpinePlayer from './components/Spine-Player/index.vue'

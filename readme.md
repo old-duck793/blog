@@ -10,6 +10,8 @@
 
 3.为了适应多站点，评论组件换成了giscus
 
+4.更新了原本的点击特效，现在基本还原Blue Archive中的点击特效了，感谢[BASpark项目](https://github.com/DoomVoss/BASpark)
+
 ![logo](.vitepress/theme/assets/icon/footLogo.svg)
 
 BA 主题博客，基于 VitePress，绝赞画饼中
@@ -235,3 +237,4 @@ jobs:
 - [Anime.js Fireworks canvas demo](https://codepen.io/juliangarnier/pen/gmOwJX) and [hexo-theme-yun](https://github.com/YunYouJun/hexo-theme-yun) 点击烟花效果 🎉
 - [spine-runtimes](https://github.com/esotericsoftware/spine-runtimes) spine 运行时
 - [Blueaka@kivo.fun](https://kivo.fun/) BA 游戏字体
+- [BASpark](https://github.com/DoomVoss/BASpark) 点击特效参考
