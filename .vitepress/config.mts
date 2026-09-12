@@ -1,4 +1,5 @@
 import { defineConfigWithTheme } from 'vitepress'
+// @ts-ignore
 import mdItCustomAttrs from 'markdown-it-custom-attrs'
 export interface ThemeConfig {
   //navBar
@@ -30,6 +31,7 @@ export interface ThemeConfig {
 
 export default defineConfigWithTheme<ThemeConfig>({
   lang: 'zh-CN',
+  srcExclude: ['**/temp/**'],
   head: [
     ['link', { rel: 'shortcut icon', href: '/favicon.ico' }],
     // bluearchive font

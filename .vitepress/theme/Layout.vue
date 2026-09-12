@@ -19,7 +19,7 @@
     </main>
     <Footer></Footer>
     <BASpark v-if="state.fireworksEnabled"></BASpark>
-    <SpinePlayer></SpinePlayer>
+    <ClientOnly><SpinePlayer></SpinePlayer></ClientOnly>
     <ToTop></ToTop>
     <!-- 背景音乐元素 -->
     <audio id="background-music" loop>
